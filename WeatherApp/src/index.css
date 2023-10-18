@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family:'Times New Roman', Times, serif;
+}
+.app{
+  background-image: url('./img/8026886768_1a1381076d_b.jpg');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.5s;
+}
+.app.cold{
+  background-image: url('./img/fonstola.ru_120304.jpg');
+}
+main{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom,
+   rgba(0, 0, 0, 0.2),
+   rgba(0, 0, 0, 0.75),
+   );
+   padding: 25px;
+}
+.search-box{
+  width: 100%;
+  margin: 0 0 75px;
+}
+.search-box .search-bar{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.688);
+  border-radius: 0px 16px 0px 16px;
+  margin-top: 35vh;
+  border-bottom: 8px solid rgb(19, 226, 234);
+  box-shadow: 0px 5px rgba(0, 0, 0, .2);
+  font-size: 23px;
+  transition: 0.3s ease;
+  font-style: italic;
+}
+
+.search-box .search-bar:focus{
+  background-color: rgba(255, 255, 255, .9);
+  border-radius: 16px 0px 16px 0px;
+}
+.location-box .location{
+  margin-top: 10vh;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.75);
+}
+.location-box .date{
+  color: rgb(8, 0, 0);
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(4, 44, 51, 0.188);
+}
+.weather-box .temp{
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color:rgba(255, 255, 255, .2);
+  border-radius: 16px;
+  padding: 15px 2px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, .5);
+  text-align: center;
+  box-shadow:3px 6px rgba(0, 0, 0, .2);
+  border: 1px solid black ;
+}
+.weather-box .weather{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(0, 0, 0, .2);
+}
